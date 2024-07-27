@@ -12,11 +12,25 @@
             .a_tbdr{
                 border: 1px solid green;
             }
+            @media only screen and (min-width:0px) and (max-width:576px){
+                .col-12{
+                    background-color: red;
+                }
+            }
+            @media only screen and (min-width:568px) and (max-width:768px){
+                .col-12{
+                    background-color: green;
+                }
+            } @media only screen and (min-width:769px) and (max-width:992px){
+                .col-12{
+                    background-color: blue;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="row a_row">
-            <div class="col a_tbdr">a</div>
+            <div class="col-12 col-sm-6 col-md-3 a_tbdr">a</div>
             <div class="col a_tbdr">b</div>
             <div class="col a_tbdr">c</div>
             <div class="col a_tbdr">d</div>
